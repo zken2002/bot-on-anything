@@ -90,4 +90,4 @@ class WechatSubsribeAccount(Channel):
     
 @robot.subscribe
 def subscribe_reply(message):
-    return '感谢关注！\n老板不在，有事直接问我就好啦！'
+    return '感谢关注，我是ai加持的信鸦！\n老板长期缺勤，有事直接问我就好啦！'
