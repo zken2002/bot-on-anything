@@ -109,7 +109,7 @@ class WechatChannel(Channel):
         create_time = msg['CreateTime']             # 消息时间
 
         hot_reload = channel_conf_val(const.WECHAT, 'hot_reload', True)
-        if hot_reload == True and int(create_time) < int(time.time()) - 120:  # 跳过1分钟前的历史消息
+        if hot_reload == True and int(create_time) < int(time.time()) - 3600:  # 跳过一小时前的历史消息
             logger.debug("[WX]history message skipped")
             return
 
