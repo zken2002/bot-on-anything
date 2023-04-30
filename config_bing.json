@@ -1,6 +1,6 @@
 {
   "model": {
-    "type" : "chatgpt",
+    "type" : "bing",
     "openai": {
       "api_key": "YOUR API KEY",
       "api_base": "",
